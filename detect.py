@@ -19,8 +19,8 @@ python3 detect.py \
   --model ${TEST_DATA}/mobilenet_ssd_v2_face_quant_postprocess_edgetpu.tflite
 Run coco model:
 python3 detect.py \
-  --model Test.tflite \
-  --labels coco_labels.txt
+  --model \Test.tflite \
+  --labels \coco_labels.txt
 """
 import argparse
 import cv2

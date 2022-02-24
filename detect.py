@@ -20,7 +20,7 @@ python3 detect.py \
 Run coco model:
 python3 detect.py \
   --model Test.tflite \
-  --labels labels.txt
+  --labels coco_labels.txt
 """
 import argparse
 import cv2

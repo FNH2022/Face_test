@@ -13,11 +13,7 @@
 # limitations under the License.
 
 """A demo that runs object detection on camera frames using OpenCV.
-TEST_DATA=../all_models
-Run face detection model:
-python3 detect.py \
-  --model ${TEST_DATA}/mobilenet_ssd_v2_face_quant_postprocess_edgetpu.tflite
-Run coco model:
+
 python3 detect.py \
   --model Test.tflite \
   --labels coco_labels.txt
@@ -33,8 +29,8 @@ from pycoral.utils.edgetpu import make_interpreter
 from pycoral.utils.edgetpu import run_inference
 
 def main():
-    default_model_dir = '../all_models'
-    default_model = 'mobilenet_ssd_v2_coco_quant_postprocess_edgetpu.tflite'
+    default_model_dir = '/Test.tflite '
+    default_model = 'Test.tflite '
     default_labels = 'coco_labels.txt'
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', help='.tflite model path',
